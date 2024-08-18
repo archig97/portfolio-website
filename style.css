@@ -1,0 +1,18 @@
+
+/* Increase size of navbar content set automatically by Bootstrap */
+.navbar-brand{
+    font-size: xx-large;
+}
+
+/* Try to fix the navbar items only on the right */
+
+.navbar{
+    display: flex;
+}
+
+.navbar-nav{
+    display: flex;
+    margin: auto;
+    font-size: larger;
+    justify-items: flex-end;
+}
