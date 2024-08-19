@@ -4,15 +4,66 @@
     font-size: xx-large;
 }
 
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* smooth scroll behavior when any link on navbar is clicked */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* setting transition rules for when links and buttons are clicked */
+
+a,button{
+    transition: all, 300ms, ease;
+}
+
 /* Try to fix the navbar items only on the right */
 
-.navbar{
+.navbar, .navbar-nav{
     display: flex;
+}
+
+.navbar{
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navbar-nav{
-    display: flex;
+    
     margin: auto;
     font-size: larger;
-    justify-items: flex-end;
+    gap: 2rem;
 }
+
+/* setting style changes for when navbar links will be hovered over */
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* Since we do not want our navbar logo to be a link, we need to make sure the cursor does not change when 
+it hovers over the logo */
+
+.navbar-brand:hover{
+    cursor: default;
+    text-decoration: none;
+}
+
+/* hamburger menu to only be visible for small devices */
+
+.hamburger-nav{
+    display:none;
+}
+
+
