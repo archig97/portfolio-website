@@ -163,14 +163,33 @@ color: white;
 color: black;
 }
 
-.arrow-icon{
-    
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-    width: 10px;
-    height: 10px;
-}
+
+
+.tech-stack {
+    display: flex; /* Arrange icons in a row */
+    justify-content: space-around; /* Align icons to the center */
+    gap: 30px; /* Space between icons */
+    padding: 20px; /* Optional: add padding around the container */
+  }
+
+  .tech-icon{
+    width: 60px;
+    height: 60px;
+    margin: 10px 15px;
+   
+  }
+
+  .sse-experience{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .se-experience{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
 
 
 
