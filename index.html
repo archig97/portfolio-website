@@ -14,12 +14,12 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Archismita Ghosh</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> <!-- toggles the navbar collapse on smaller screens -->
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">About</a>
+                <a class="nav-link" aria-current="page" href="#education">Education</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#experience">Experience</a>
@@ -38,41 +38,92 @@
         </div>
       </nav>
 
-      <!-- CREATED HAMBURGER NAVBAR FOR MOBILE VIEW USING VANILLA JS -->
-
-      <nav class="navbar hamburger-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Archismita Ghosh</a>
-          <div class="hamburger-menu">
-            <div class="hamburger-icon" onClick="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      <section id="profile">
+        <div class="image-container container-fluid">
+          <img src="./assets/profile-pic.png" class="img-fluid" alt="Profile Picture"/>
+        </div>
+        <div class="profile-text container-fluid">
+          <h4>Hello, I'm <b>Archismita Ghosh</b>, software engineer. I am a full stack developer, with 2+ years of experience in developing web applications in Java and Javascript </h4>
+          <div class="btn-container container-fluid">
+            <button type="button" class="btn btn-success" onclick="window.open('./assets/Archismita Ghosh - SWE Intern (3).pdf','_blank')">Download Resume</button><!-- will not work without the _blank so make sure it is added -->
+            <button type="button" class="btn btn-info" onclick="location.href='./#contact'">Contact Info</button>
           </div>
-          <div class="menu-links">
-            <ul>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
           
+          <div class="socials container-fluid">
+            <img src="./assets/linkedin.png" class="icon img-fluid" alt="My LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/archismitaghosh/'"/>
+            <img src="./assets/github.png" class="icon img-fluid" alt="My Github Profile" onclick="location.href='https://github.com/archig97/'"/>
           </div>
-
         </div>
         
-      </nav>
+      </section>
+      <section id="education">
+        
+          
+        <h1 class="section-title">Education</h1>
+        
+        
+        <div class="section-container container-fluid">
+          <div class="image-container container-fluid">
+            <img src="assets/ncstatelogo.png" alt="NCSU" class="about-pic"/>
+            <img src="assets/makautlogo.svg" alt="MAKAUT" class="makaut-pic"/>
+          </div>
+          <div class="about-details container-fluid">
+            <div class="about-container container-fluid">
+              <div class="details-container container-fluid">
+              
+               <h5>North Carolina State University, Raleigh, North Carolina</h5>
+               <h6>Masters of Computer Science</h6>
+               <h6>August 2024 - May 2026(expected)</h6>
+               <p>Coursework - Design and Analysis of Algorithms, Software Engineering, Automated Learning and Data
+                Analysis</p>
+                <h5>Maulana Abul Kalam Azad University of Technology, Kolkata, India</h5>
+               <h6>Bachelors of Electronics and Computer Engineering</h6>
+               <h6>August 2016 - July 2020 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;CGPA - 8.5/10</h6>
+               <p>Coursework - Data Structures and Algorithms, Database Management Systems, Operating Systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section id="experience">
+        <h1 class="section-title">Experience</h1>
+        <div class="experience-container container-fluid">
+          <div class="sse-experience container-fluid">
+            <h3>Senior Software Engineer, LTIMindtree</h3>
+            <h5>Bengaluru, India&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;June 2022 - July 2024</h5>
+            <ul>
+              <li>Developed the UI for an e-communication framework using ReactJS to generate paperless billing
+                notifications for insurance premiums.</li>
+              <li> Incorporated option to create a global paperless preference toggle for multiple accounts on user
+                  interface which led to 80% decrease in bills sent by US Mail</li>
+              <li>
+                Built the client-side framework using AngularJS for updating beneficiaries for life insurance consumers
+              </li>
+              <li>
+                Added readable tooltips and tested via JAWS and WAVE tools to make application 100% ADA compliant
+              </li>
+            </ul>
+          </div>
+
+          <div class="se-experience container-fluid"></div>
+            <h3>Software Engineer, Mindtree</h3>
+            <h5>Bengaluru, India&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;June 2021 - May 2022</h5>
+            <ul>
+              <li>  Developed UI for epayment application where insurance customers get an option to click a link and
+                do single-sign-on to a bank payment page to pay their premium. </li>
+              <li>  Created a toggle on click of SSO link that helped customers opt into notifications easily, leading to a
+                50% increase in paperless notification sign-ins.</li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+
+      
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
