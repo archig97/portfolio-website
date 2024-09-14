@@ -191,6 +191,24 @@ color: black;
     margin-bottom: 20px;
   }
 
+  .intrusion-detection-system{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .bank-management-system{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .project-container{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+  }
+
 
 
 
