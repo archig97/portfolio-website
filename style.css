@@ -5,8 +5,8 @@
 }
 
 body{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 /* smooth scroll behavior when any link on navbar is clicked */
@@ -14,6 +14,8 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
 
 /* setting transition rules for when links and buttons are clicked */
 
@@ -25,18 +27,22 @@ a,button{
 
 .navbar, .navbar-nav{
     display: flex;
+    
 }
 
 .navbar{
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top:0;
 }
 
 .navbar-nav{
     
-    margin: auto;
+    margin: 1px;
     font-size: larger;
     gap: 2rem;
+    padding-bottom: 0;
 }
     
 
@@ -72,6 +78,10 @@ it hovers over the logo */
     min-height: fit-content;
 }
 
+.profile-pic{
+    border-radius: 10px;
+}
+
 #profile{
     display: flex;
     justify-content: center;
@@ -79,12 +89,13 @@ it hovers over the logo */
     height: 80vh;
 }
 
-#about{
+#education{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:1rem;
     height: 80vh;
+    padding-top: 30px;
 }
 
 
@@ -107,8 +118,15 @@ it hovers over the logo */
 
 .image-container{
     display: flex;
-    height: 300px;
+    height: 350px;
     width: 600px;
+    margin: auto 0;
+}
+
+.education-image-container{
+    display: flex;
+    height: 250px;
+    width: 450px;
     margin: auto 0;
 }
 
@@ -163,7 +181,10 @@ color: white;
 color: black;
 }
 
+#experience{
+    padding-top: 55px;
 
+}
 
 .tech-stack {
     display: flex; /* Arrange icons in a row */
@@ -191,16 +212,35 @@ color: black;
     margin-bottom: 20px;
   }
 
+  /*Project section */
+
+  #projects{
+    padding-top: 55px;
+  }
+
   .intrusion-detection-system{
+    width:30%;
     border: 2px solid black;
     border-radius: 5px;
     margin-bottom: 20px;
   }
 
   .bank-management-system{
+    width:30%;
     border: 2px solid black;
     border-radius: 5px;
     margin-bottom: 20px;
+  }
+
+  .real-time-chat{
+    width:30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #real-time-chat-icons{
+    padding-top: 10px;
   }
 
   .project-container{
@@ -208,6 +248,49 @@ color: black;
     justify-content: center;
     gap:10px;
   }
+
+
+  /* CONTACT INFO SECTION STYLE */
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .contact-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black ;
+    border-radius:12px;
+    width:50%;
+    gap:2rem;
+    margin:2rem auto;
+    padding: 0.5rem;
+    
+  }
+
+  .email-contact-info, .phone-contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .email-contact-info>p, .phone-contact-info>p{
+    text-align: center;
+    align-items: center;
+    padding-top: 0.6rem;
+    
+  }
+
+  .email,.phone{
+    cursor: default;
+  }
+
+
 
 
 

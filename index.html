@@ -39,13 +39,13 @@
       </nav>
 
       <section id="profile">
-        <div class="image-container container-fluid">
-          <img src="./assets/profile-pic.png" class="img-fluid" alt="Profile Picture"/>
+        <div class="image-container profile-picture container-fluid">
+          <img src="./assets/profile-pic-formal.png" class="img-fluid" alt="Profile Picture"/>
         </div>
         <div class="profile-text container-fluid">
           <h4>Hello, I'm <b>Archismita Ghosh</b>, software engineer. I am a full stack developer, with 2+ years of experience in developing web applications in Java and Javascript </h4>
           <div class="btn-container container-fluid">
-            <button type="button" class="btn btn-success" onclick="window.open('./assets/Archismita Ghosh - SWE Intern (3).pdf','_blank')">Download Resume</button><!-- will not work without the _blank so make sure it is added -->
+            <button type="button" class="btn btn-success" onclick="window.open('./assets/Archismita Ghosh - SWE Resume.pdf','_blank')">Download Resume</button><!-- will not work without the _blank so make sure it is added -->
             <button type="button" class="btn btn-info" onclick="location.href='./#contact'">Contact Info</button>
           </div>
           
@@ -63,7 +63,7 @@
         
         
         <div class="section-container container-fluid">
-          <div class="image-container container-fluid">
+          <div class="education-image-container container-fluid">
             <img src="assets/ncstatelogo.png" alt="NCSU" class="about-pic"/>
             <img src="assets/makautlogo.svg" alt="MAKAUT" class="makaut-pic"/>
           </div>
@@ -142,7 +142,7 @@
         <h1 class="section-title">Projects</h1>
         <div class="project-container container-fluid">
           <div class="intrusion-detection-system container-fluid">
-            <h2>Intrusion Detection System - Flask/Customtkinter</h2>
+            <h2>Intrusion Detection System - Flask, Customtkinter</h2>
             <p>Built and intrusion detection system using Flask and Customtkinter to find malware in network traffic</p>
             <div class="tech-icons">
               <img src="assets/icons8-flask-50.png" alt="Flask" class="tech-icon">
@@ -164,9 +164,36 @@
                    
                    
                   </div>
+
+                  <div class="real-time-chat container-fluid">
+                    <h2>Real Time Chat Application - Django, HTML and CSS</h2>
+                    <p>Built a real-time chat app using Django channels and asynchronous server gateway interface (ASGI)</p>
+                    <div class="tech-icons" id="real-time-chat-icons">
+                      <img src="assets/icons8-python-48.png" alt="Python" class="tech-icon">
+                      <img src="assets/django_icon.png" alt="Django" class="tech-icon">
+                    </div>
+                       
+                       
+                      </div>
             </div>
             
 
+      </section>
+
+      <section id="contact">
+        <h1 class="section-title">Contact Me</h1>
+        <div class="contact-info-container container-fluid">
+          <div class="email-contact-info container-fluid">
+            <img src="assets/email.png" alt="email id" class="email icon"/>
+            <p><a href="mailto:archismitaghosh@yahoo.com">archismitaghosh@yahoo.com</a></p>
+          </div>
+          <div class="phone-contact-info container-fluid">
+            <img src="assets/icons8-phone-50.png" alt="phone number" class="phone icon"/>
+            <p><a href="tel:+19843792573">+1 (984)-379-2573</a></p>
+          </div>
+            
+          </div>
+        </div>
       </section>
 
       
