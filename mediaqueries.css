@@ -1,4 +1,157 @@
 
 @media screen and (max-width:1200px){
+    .navbar{
+        justify-content: space-around;
+        align-items: center;
+        
+      
+    }
+}
+
+@media screen and (max-width:800px){
+    #profile{
+        height:70vh;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .profile-text{
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .socials{
+        margin-bottom: 1rem;
+    }
+
+    section{
+        margin: 0 5%;
+    }
+
+    .section-title{
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .section-container{
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 5px;
+        
+    }
+
+    #profile,.section-container{
+        display: block;
+    }
+
+    #education{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #experience, .experience-container{
+        margin-top: 2rem;
+        width: fit-content;
+    }
+
+    .image-container{
+        height:275px;
+        width: 275px;
+        margin: 0 auto 2rem;
+      
+    }
+
+    .education-image-container{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .details-container{
+        margin: 2px auto;
+        justify-content: center;
+        border:2px solid black;
+        border-radius: 5px;
+        padding-top: 5px;
+        width: fit-content;
+    }
+
+    .project-container{
+        display:block;
+        
+    }
+
+    .project{
+        width:auto;
+    }
+
+    .contact-info-container{
+        display: block;
+        font-size: 1rem;
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .navbar{
+        width: fit-content;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+    #contact{
+        height:40vh;
+        
+    }
+    .contact-info-container, .section-container,.btn-container{
+        display: block;
+    }
+
+    .profile-text{
+        width:400px;
+    }
+
+    .education-image-container{
+        
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        height: auto;
+        width: fit-content;
+       
+    }
+
+    #profile{
+        height:83vh;
+        margin-bottom: 0;
+    }
+
+    article{
+        font-size:1rem;
+    }
+
+    .contact-info-container{
+        font-size: 1rem;
+        margin: auto;
+        width: 80%;
+    }
+
+    .nav-links,p, li, a{
+        font-size: 1rem;
+    }
+
+    .experience-container{
+        font-size: 1.5rem;
+    }
+       
     
 }
